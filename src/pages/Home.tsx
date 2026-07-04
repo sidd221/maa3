@@ -92,7 +92,7 @@ export default function Home() {
         {/* Background Image Setup */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/hero_section_bg_new.jpeg" 
+            src="/hero_section_bg.png" 
             alt="Maa Homoeo Clinic - Homeopathic Clinic in Patna" 
             className="w-full h-full object-cover object-center opacity-60" 
           />
