@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Link } from 'react-router-dom';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import SplitText from '../components/SplitText';
 
@@ -39,7 +38,7 @@ const treatments = [
   { id: 30, name: "Varicose Veins", category: "Chronic", duration: "8-16 Months", desc: "Reduce pain and swelling in engorged veins, improving circulation safely.", fullDesc: "Treatment focuses on improving vein elasticity and preventing the progression of varicosities. Our remedies safely manage symptoms like heaviness in the legs and superficial skin ulcerations.", image: "/Varicose Veins.jpeg" }
 ];
 
-function TreatmentCard({ treatment }: { treatment: typeof treatments[0], key?: string | number }) {
+function TreatmentCard({ treatment }: { treatment: typeof treatments[0] }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
