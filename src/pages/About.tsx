@@ -35,7 +35,7 @@ export default function About() {
         <div className="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden flex flex-col md:flex-row">
           <div className="md:w-5/12 relative flex items-center justify-center bg-gray-50">
             <img 
-              src="/d1.jpeg" 
+              src="/d1.webp" 
               alt="Dr. Pradip Kumar" 
               className="w-full h-full object-cover md:object-contain object-center min-h-[300px] md:min-h-full" 
             />
@@ -66,12 +66,12 @@ export default function About() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { title: "Guest of Honour Recognition – Eklavya S. P. Academy", org: "", year: "", image: "/c_1.jpeg", desc: "Awarded to Dr. Pradip Kumar as a Guest of Honour by Eklavya S. P. Academy (Dighwara, Saran) for sharing professional expertise and supporting institutional initiatives." },
-            { title: "Memorial Seminar Award – Dr. (Prof.) Renu Singh Memorial Trust (2022)", org: "", year: "", image: "/c_2.jpeg", desc: "Presented to Dr. Pradip Kumar at the IMA Hall (Patna) seminar in recognition of medical professional excellence and valuable contributions to the healthcare community." },
-            { title: "Certificate of Excellence in Homoeopathy – Ayush Directorate & Kent Pharmaceuticals", org: "", year: "", image: "/c_3.jpeg", desc: "Awarded to Dr. Pradip Kumar on World Homoeopathic Day for demonstrating extraordinary enthusiasm and outstanding contributions to the field of healthcare and humanity." },
-            { title: "Radio City 'Thank You, Doctor' Recognition Certificate.", org: "", year: "", image: "/c_4.jpeg", desc: "Presented to Dr. Pradip Kumar (Maa Homoeo Clinic) by 91.1 FM Radio City in recognition of invaluable healthcare service and dedication to community well-being." },
-            { title: "Special Recognition Award – Talent Hunt Exam (2023)", org: "", year: "", image: "/c_5.jpeg", desc: "Awarded to Dr. Pradip Kumar by the Baldev Memorial Educational & Welfare Society and Director's Club for outstanding support and contribution during the competitive event in Hajipur." },
-            { title: "Certificate of Participation – 1st International Indo-Nepal Homoeopathic Scientific Seminar (2023)", org: "", year: "", image: "/c_6.jpeg", desc: "Awarded to Dr. Pradip Kumar for participating in the international scientific seminar organised by the Dr. Renu Singh Memorial Charitable Trust and the All Nepal Homoeopathic Association in Janakpur Dham, Nepal." }
+            { title: "Guest of Honour Recognition – Eklavya S. P. Academy", org: "", year: "", image: "/c_1.webp", desc: "Awarded to Dr. Pradip Kumar as a Guest of Honour by Eklavya S. P. Academy (Dighwara, Saran) for sharing professional expertise and supporting institutional initiatives." },
+            { title: "Memorial Seminar Award – Dr. (Prof.) Renu Singh Memorial Trust (2022)", org: "", year: "", image: "/c_2.webp", desc: "Presented to Dr. Pradip Kumar at the IMA Hall (Patna) seminar in recognition of medical professional excellence and valuable contributions to the healthcare community." },
+            { title: "Certificate of Excellence in Homoeopathy – Ayush Directorate & Kent Pharmaceuticals", org: "", year: "", image: "/c_3.webp", desc: "Awarded to Dr. Pradip Kumar on World Homoeopathic Day for demonstrating extraordinary enthusiasm and outstanding contributions to the field of healthcare and humanity." },
+            { title: "Radio City 'Thank You, Doctor' Recognition Certificate.", org: "", year: "", image: "/c_4.webp", desc: "Presented to Dr. Pradip Kumar (Maa Homoeo Clinic) by 91.1 FM Radio City in recognition of invaluable healthcare service and dedication to community well-being." },
+            { title: "Special Recognition Award – Talent Hunt Exam (2023)", org: "", year: "", image: "/c_5.webp", desc: "Awarded to Dr. Pradip Kumar by the Baldev Memorial Educational & Welfare Society and Director's Club for outstanding support and contribution during the competitive event in Hajipur." },
+            { title: "Certificate of Participation – 1st International Indo-Nepal Homoeopathic Scientific Seminar (2023)", org: "", year: "", image: "/c_6.webp", desc: "Awarded to Dr. Pradip Kumar for participating in the international scientific seminar organised by the Dr. Renu Singh Memorial Charitable Trust and the All Nepal Homoeopathic Association in Janakpur Dham, Nepal." }
           ].map((item, i) => (
              <motion.div
                key={i}
