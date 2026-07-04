@@ -16,13 +16,7 @@ export default function Contact() {
     
     const formData = new FormData(e.target as HTMLFormElement);
     
-    const accessKey = (import.meta as any).env.VITE_WEB3FORMS_ACCESS_KEY;
-    if (!accessKey) {
-      console.error("Web3Forms access key is missing.");
-      alert("Form submission is currently unavailable. Please contact us directly.");
-      setIsSubmitting(false);
-      return;
-    }
+    const accessKey = "c2c0a419-5237-4c53-af20-273144281806";
     formData.append("access_key", accessKey); 
 
     try {
