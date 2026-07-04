@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maahomoeoclinic.vercel.app/sitemap.xml

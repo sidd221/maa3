@@ -1,0 +1,19 @@
+# Maa Homoeo Clinic
+
+> Maa Homoeo Clinic in Patna, led by Dr. Pradip Kumar, offers safe, permanent homeopathic treatments for chronic diseases, skin issues, allergies, and pediatric care.
+
+## About
+Maa Homoeo Clinic is the best homeopathy clinic in Patna, offering safe and permanent homeopathic treatments for chronic diseases, skin issues, and pediatric care.
+
+## Contact Info
+- Phone: +91 9431008188
+- Address: Patna, Bihar, India
+- Website: https://maahomoeoclinic.vercel.app/
+
+## Key Sections
+- [Home](https://maahomoeoclinic.vercel.app/)
+- [About Us](https://maahomoeoclinic.vercel.app/#about)
+- [Treatments](https://maahomoeoclinic.vercel.app/#treatments)
+- [Gallery](https://maahomoeoclinic.vercel.app/#gallery)
+- [FAQ](https://maahomoeoclinic.vercel.app/#faq)
+- [Contact](https://maahomoeoclinic.vercel.app/#contact)
