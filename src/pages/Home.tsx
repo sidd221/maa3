@@ -95,6 +95,7 @@ export default function Home() {
             src="/hero_section_bg.webp" 
             alt="Maa Homoeo Clinic - Homeopathic Clinic in Patna" 
             className="w-full h-full object-cover object-center opacity-60" 
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-neutral-light/90 via-neutral-light/70 to-neutral-light/30"></div>
         </div>
@@ -160,7 +161,7 @@ export default function Home() {
             
             <div className="relative flex items-center justify-center mb-6 mt-8">
               <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center border-4 border-white/30 z-10 shadow-[0_20px_40px_rgba(0,0,0,0.2)] transition-all duration-500 hover:-translate-y-4 hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] group-hover:scale-105 [transform-style:preserve-3d] perspective-[1000px]">
-                <img src="/d2.webp" alt="Dr. Pradip Kumar" className="w-full h-full object-cover rounded-full transition-transform duration-500 transform hover:scale-110 hover:-translate-z-10" />
+                <img src="/d2.webp" alt="Dr. Pradip Kumar" className="w-full h-full object-cover rounded-full transition-transform duration-500 transform hover:scale-110 hover:-translate-z-10" fetchPriority="high" />
                 <div className="absolute inset-0 rounded-full border border-white/50 scale-105 pointer-events-none opacity-50"></div>
               </div>
             </div>

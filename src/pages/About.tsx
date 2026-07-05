@@ -38,6 +38,8 @@ export default function About() {
               src="/d1.webp" 
               alt="Dr. Pradip Kumar" 
               className="w-full h-full object-cover md:object-contain object-center min-h-[300px] md:min-h-full" 
+              loading="lazy" 
+              decoding="async"
             />
           </div>
           <div className="md:w-7/12 p-6 sm:p-10 md:p-16">
@@ -87,7 +89,7 @@ export default function About() {
                {/* Mobile View: Standard Layout */}
                <div className="relative z-10 md:hidden flex flex-col h-full overflow-hidden bg-white rounded-2xl shadow-sm border border-gray-100">
                  <div className="w-full h-56 relative overflow-hidden bg-gray-50 p-4 flex items-center justify-center">
-                   <img src={item.image} alt={item.title} className="max-w-full max-h-full object-contain drop-shadow-md" />
+                   <img src={item.image} alt={item.title} className="max-w-full max-h-full object-contain drop-shadow-md" loading="lazy" decoding="async" />
                  </div>
                  <div className="p-6 flex flex-col flex-grow text-center items-center justify-center">
                    <h3 className="font-bold text-xl mb-2 text-text-dark">{item.title}</h3>
@@ -100,7 +102,7 @@ export default function About() {
                  {/* Front */}
                  <div className="absolute inset-0 [backface-visibility:hidden] flex flex-col bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
                    <div className="w-full h-56 relative overflow-hidden bg-gray-50 p-4 flex items-center justify-center">
-                     <img src={item.image} alt={item.title} className="max-w-full max-h-full object-contain drop-shadow-md transition-transform duration-500 group-hover:scale-105" />
+                     <img src={item.image} alt={item.title} className="max-w-full max-h-full object-contain drop-shadow-md transition-transform duration-500 group-hover:scale-105" loading="lazy" decoding="async" />
                    </div>
                    <div className="p-6 flex flex-col flex-grow text-center items-center justify-center">
                      <h3 className="font-bold text-xl mb-2 text-text-dark">{item.title}</h3>

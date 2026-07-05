@@ -53,7 +53,7 @@ function TreatmentCard({ treatment }: { treatment: typeof treatments[0], key?: i
       <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent opacity-40 group-hover:opacity-60 animate-border-gradient rounded-2xl blur-md transition-opacity duration-500"></div>
       <div className="relative bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col h-full">
         <div className="w-full h-48 relative overflow-hidden shrink-0">
-          <img src={treatment.image} alt={treatment.name} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
+          <img src={treatment.image} alt={treatment.name} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" decoding="async" />
         </div>
         <div className="p-6 flex flex-col flex-grow">
           <div className="flex justify-between items-start mb-4 gap-4">

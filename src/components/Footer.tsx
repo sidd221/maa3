@@ -18,7 +18,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden shrink-0 bg-white">
-                <img src="/logo_maahomeoclinic.jpeg" alt="Maa Homoeo Clinic Logo" className="w-full h-full object-cover" />
+                <img src="/logo_maahomeoclinic.jpeg" alt="Maa Homoeo Clinic Logo" className="w-full h-full object-cover" loading="lazy" decoding="async" />
               </div>
               <span className="text-2xl font-serif font-bold">Maa Homoeo Clinic</span>
             </div>
