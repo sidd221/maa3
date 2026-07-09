@@ -48,7 +48,7 @@ export default function About() {
             
             <div className="space-y-6 text-text-dark/80 text-lg leading-relaxed">
               <p>
-                Dr. Pradip Kumar is widely recognized as the Best Homeopathic Doctor in Patna, with over 30 years of clinical experience. At his Homeopathic Clinic in Patna, he has dedicated his life to advancing the practice of classical homeopathy and providing safe, side-effect-free treatments.
+                Dr. Pradip Kumar is widely recognized as the Best Homoeopathic Doctor in Patna, with over 30 years of clinical experience. At his Homoeopathic Clinic in Patna, he has dedicated his life to advancing the practice of classical homoeopathy and providing safe, side-effect-free treatments.
               </p>
               <p>
                 "My philosophy is simple: treat the patient, not just the disease. Every individual is unique, and so are their physical and emotional responses to illness. We focus on stimulating the body's natural healing force."
@@ -132,7 +132,7 @@ export default function About() {
             {[
               { icon: Heart, title: "1. Deep Consultation", desc: "A 45-minute profound discussion about your symptoms, lifestyle, emotional state, and medical history." },
               { icon: Search, title: "2. Root Diagnosis", desc: "Analyzing the collected information to identify the underlying cause of your condition, not just the superficial symptoms." },
-              { icon: Pill, title: "3. Personalized Remedy", desc: "Selecting a specific homeopathic medicine tailored exactly to your unique constitution." },
+              { icon: Pill, title: "3. Personalized Remedy", desc: "Selecting a specific homoeopathic medicine tailored exactly to your unique constitution." },
               { icon: Activity, title: "4. Gentle Follow-up", desc: "Regular monitoring of your progress and adjusting the remedy potency as your health improves." }
             ].map((step, i) => (
               <motion.div 
@@ -173,7 +173,7 @@ export default function About() {
         <h2 className="text-4xl font-serif font-bold text-primary mb-16 text-center">Clinic Milestones</h2>
         <div className="space-y-12">
           {[
-            { year: "1995", title: "Clinic Foundation", desc: "Started as a small consulting room in central Patna with a vision to provide authentic homeopathy." },
+            { year: "1995", title: "Clinic Foundation", desc: "Started as a small consulting room in central Patna with a vision to provide authentic homoeopathy." },
             { year: "2005", title: "Expansion to Full Facility", desc: "Moved to our current, larger premises to accommodate the growing number of patients and establish a modern pharmacy." },
             { year: "2012", title: "ISO Certification", desc: "Recognized for maintaining high standards in medicine dispensing and patient care management." },
             { year: "2020", title: "Digital Telemedicine Launch", desc: "Began offering online consultations to serve patients globally during the pandemic." }

@@ -93,7 +93,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <img 
             src="/hero_section_bg.webp" 
-            alt="Maa Homoeo Clinic - Homeopathic Clinic in Patna" 
+            alt="Maa Homoeo Clinic - Homoeopathic Clinic in Patna" 
             className="w-full h-full object-cover object-center opacity-60" 
             fetchPriority="high"
           />
@@ -104,7 +104,7 @@ export default function Home() {
           <div className="md:w-3/5 px-4 sm:px-8 py-12 md:p-16 flex flex-col justify-center">
           <div className="flex flex-wrap items-center gap-3 mb-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-bold uppercase tracking-wider w-max border border-primary/20">
-              Classical Homeopathy
+              Classical Homoeopathy
             </div>
           </div>
           
@@ -125,7 +125,7 @@ export default function Home() {
             transition={{ delay: 0.8, duration: 0.8 }}
             className="text-lg sm:text-xl text-text-dark/70 mb-8 sm:mb-10 max-w-lg leading-relaxed"
           >
-            The leading Homeopathic Clinic in Patna, specializing in chronic conditions, pediatric care & holistic wellness through personalized solutions.
+            The leading Homoeopathic Clinic in Patna, specializing in chronic conditions, pediatric care & holistic wellness through personalized solutions.
           </motion.p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-8 sm:mb-10">
@@ -212,10 +212,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Homeopathy? */}
+      {/* Why Homoeopathy? */}
       <section className="py-24 px-4 max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-serif font-bold text-primary mb-4">Why Homeopathy?</h2>
+          <h2 className="text-4xl font-serif font-bold text-primary mb-4">Why Homoeopathy?</h2>
           <p className="text-lg text-text-dark/70 max-w-2xl mx-auto">A natural approach to healing that stimulates your body's own defense mechanisms.</p>
         </div>
         
@@ -309,35 +309,35 @@ export default function Home() {
           <div ref={scrollRef} className="flex gap-6 overflow-x-auto pb-8 pt-4 px-4 md:px-12 hide-scrollbar">
             {[
               { text: "Dr.Pradip Kumar possesses a gratitude behaviour and listens to the problems in detail & calmly and results are just WOW...The doctor assure guaranteed results for skin diseases within short span of time!!!", name: "kumar mitul", date: "12 Jun 2021", initial: "k", color: "bg-yellow-500" },
-              { text: "Dr Pradeep is a brilliant doctor. Listening problems carefully and Prescribed appropriate homeopathy medicine We shall be thankful to him I came from Bangalore for treatment of my wife and happy", name: "RAJU Saha", date: "12 Apr 2025", initial: "R", color: "bg-red-500" },
+              { text: "Dr Pradeep is a brilliant doctor. Listening problems carefully and Prescribed appropriate homoeopathy medicine We shall be thankful to him I came from Bangalore for treatment of my wife and happy", name: "RAJU Saha", date: "12 Apr 2025", initial: "R", color: "bg-red-500" },
               { text: "Best treatment of chronic diseases.", name: "Sushil Kumar", date: "16 Jul 2023", initial: "S", color: "bg-blue-400" },
               { text: "Very satisfied . the way he diagnose the problem and appropriate medicine advice us is incredible", name: "Manish Kumar", date: "41 weeks ago", initial: "M", color: "bg-teal-600" },
-              { text: "The best Homeopathic Clinic in Patna. Very patient with children and the root cause approach really works. Highly recommended.", name: "Priya M.", date: "4 months ago", initial: "P", color: "bg-blue-500" },
+              { text: "The best Homoeopathic Clinic in Patna. Very patient with children and the root cause approach really works. Highly recommended.", name: "Priya M.", date: "4 months ago", initial: "P", color: "bg-blue-500" },
               { text: "excellent service and Doctor knowledge is super.", name: "amit", date: "1 week ago", initial: "a", color: "bg-green-500" },
               { text: "Last 20 days medicine start, but my back pain, could and cough 100% relief. Thanks Dr.Pradeep sir.", name: "Vikash Kumar", date: "41 weeks ago", initial: "V", color: "bg-purple-500" },
               { text: "Warm and welcoming environment. I felt heard for the first time in years. Highly recommended for chronic issues.", name: "Vikram Singh", date: "1 year ago", initial: "V", color: "bg-orange-500" },
               { text: "Remarkable recovery from my respiratory issues. The treatment is gentle and incredibly effective.", name: "Neha Roy", date: "1 year ago", initial: "N", color: "bg-teal-500" },
               { text: "Dr. Pradip Kumar is a lifesaver. His medicines cured my persistent acidity problem that allopathic doctors couldn't solve.", name: "Suresh P.", date: "1 month ago", initial: "S", color: "bg-indigo-500" },
               { text: "Very logical and methodical approach. He takes time to understand the complete history before prescribing. Wonderful experience.", name: "Anjali D.", date: "3 months ago", initial: "A", color: "bg-pink-500" },
-              { text: "My thyroid levels are absolutely normal now, totally relying on his homeopathic remedies. Super grateful!", name: "Manoj T.", date: "5 months ago", initial: "M", color: "bg-yellow-500" },
+              { text: "My thyroid levels are absolutely normal now, totally relying on his homoeopathic remedies. Super grateful!", name: "Manoj T.", date: "5 months ago", initial: "M", color: "bg-yellow-500" },
               { text: "The wait time is a bit long sometimes, but the treatment is 100% worth it. My kid's immunity has improved drastically.", name: "Ritu S.", date: "8 months ago", initial: "R", color: "bg-red-400" },
               { text: "Genuine, honest, and highly experienced. He doesn't prescribe unnecessary medicines. True master of his craft.", name: "Kundan K.", date: "11 months ago", initial: "K", color: "bg-blue-600" },
               { text: "I had given up on my chronic back pain until I started treatment here. The difference is night and day. Thank you so much.", name: "Shikha G.", date: "1 year ago", initial: "S", color: "bg-emerald-500" },
               { text: "The clinic has a very calming atmosphere. The doctor is incredibly knowledgeable and patient.", name: "Nitin M.", date: "2 months ago", initial: "N", color: "bg-slate-500" },
-              { text: "Was skeptical about homeopathy at first, but the results speak for themselves. Very satisfied.", name: "Poonam R.", date: "4 months ago", initial: "P", color: "bg-fuchsia-500" },
+              { text: "Was skeptical about homoeopathy at first, but the results speak for themselves. Very satisfied.", name: "Poonam R.", date: "4 months ago", initial: "P", color: "bg-fuchsia-500" },
               { text: "The medicines are very effective. My son's asthma has significantly improved over the last 6 months.", name: "Alok B.", date: "6 months ago", initial: "A", color: "bg-cyan-500" },
               { text: "Affordable and highly effective treatment. The doctor actually listens to all your problems.", name: "Meera K.", date: "7 months ago", initial: "M", color: "bg-rose-500" },
-              { text: "Best decision to switch to homeopathy here. No side effects and holistic healing.", name: "Riya C.", date: "9 months ago", initial: "R", color: "bg-amber-500" },
+              { text: "Best decision to switch to homoeopathy here. No side effects and holistic healing.", name: "Riya C.", date: "9 months ago", initial: "R", color: "bg-amber-500" },
               { text: "My migraines have significantly reduced since I started taking treatment from Dr. Pradip. Highly recommend his clinic.", name: "Aarti S.", date: "2 months ago", initial: "A", color: "bg-indigo-400" },
               { text: "The consultation was very thorough. He took note of every small detail before starting the medication.", name: "Rahul Verma", date: "5 months ago", initial: "R", color: "bg-blue-500" },
               { text: "I was suffering from chronic sinusitis for years. His medication gave me relief within a few weeks.", name: "Deepak Chaurasia", date: "8 months ago", initial: "D", color: "bg-green-600" },
-              { text: "He is a very polite and understanding doctor. The homeopathic remedies worked wonders for my skin allergies.", name: "Simran Kaur", date: "1 year ago", initial: "S", color: "bg-pink-400" },
+              { text: "He is a very polite and understanding doctor. The homoeopathic remedies worked wonders for my skin allergies.", name: "Simran Kaur", date: "1 year ago", initial: "S", color: "bg-pink-400" },
               { text: "My daughter had recurrent tonsillitis. Since we started his treatment, she hasn't had a single episode. Very thankful.", name: "Manoj Tiwari", date: "3 months ago", initial: "M", color: "bg-purple-600" },
               { text: "Excellent experience. The clinic is clean, and the staff is helpful. Most importantly, the treatment is very effective.", name: "Neha Sharma", date: "10 months ago", initial: "N", color: "bg-red-500" },
-              { text: "Dr. Pradip is truly an expert in homeopathy. He cured my digestive issues completely.", name: "Amitabh Raj", date: "6 months ago", initial: "A", color: "bg-teal-500" },
+              { text: "Dr. Pradip is truly an expert in homoeopathy. He cured my digestive issues completely.", name: "Amitabh Raj", date: "6 months ago", initial: "A", color: "bg-teal-500" },
               { text: "I have been visiting Maa Homoeo Clinic for my family's health issues for years. Always reliable and safe treatment.", name: "Sunil Pandey", date: "2 years ago", initial: "S", color: "bg-orange-600" },
               { text: "The wait time can be a little long sometimes, but the doctor's diagnosis and treatment are spot on.", name: "Kavita Yadav", date: "4 months ago", initial: "K", color: "bg-cyan-600" },
-              { text: "I am amazed at how fast the homeopathic medicines worked for my joint pain. Truly grateful to Dr. Kumar.", name: "Rajendra Prasad", date: "7 months ago", initial: "R", color: "bg-emerald-600" },
+              { text: "I am amazed at how fast the homoeopathic medicines worked for my joint pain. Truly grateful to Dr. Kumar.", name: "Rajendra Prasad", date: "7 months ago", initial: "R", color: "bg-emerald-600" },
             ].map((test, i) => (
               <div
                 key={i}
@@ -395,7 +395,7 @@ export default function Home() {
       {/* CTA Banner */}
       <section className="bg-transparent py-20 px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">Ready to start your healing journey?</h2>
-        <p className="text-lg text-text-dark/70 mb-8 max-w-2xl mx-auto">Get personalized Homeopathy Treatment in Patna from the city's most trusted clinic. Safe, effective, and tailored just for you.</p>
+        <p className="text-lg text-text-dark/70 mb-8 max-w-2xl mx-auto">Get personalized Homoeopathy Treatment in Patna from the city's most trusted clinic. Safe, effective, and tailored just for you.</p>
         <a href="#contact">
           <motion.button 
             whileHover={{ scale: 1.05 }}

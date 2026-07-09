@@ -23,7 +23,7 @@ export default function Footer() {
               <span className="text-2xl font-serif font-bold">Maa Homoeo Clinic</span>
             </div>
             <p className="text-neutral-light/80 mb-6 leading-relaxed">
-              The best Homeopathic Clinic in Patna dedicated to holistic health and wellness. Experience Homeopathy Treatment in Patna that is safe, natural, and root-cause focused.
+              The best Homoeopathic Clinic in Patna dedicated to holistic health and wellness. Experience Homoeopathy Treatment in Patna that is safe, natural, and root-cause focused.
             </p>
           </div>
           
