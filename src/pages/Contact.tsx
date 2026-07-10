@@ -206,7 +206,7 @@ export default function Contact() {
           </div>
           <div className="w-full lg:w-1/2">
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-primary mb-4">Find Your Way to Healing</h2>
-            <p className="text-lg text-text-dark/70 mb-8 leading-relaxed max-w-lg">Visit our clinic for a personalized consultation. We are centrally located in Patna, easily accessible for all your holistic healthcare needs.</p>
+            <p className="text-lg text-text-dark/70 mb-8 leading-relaxed max-w-lg">Visit our clinic for a personalised consultation. We are centrally located in Patna, easily accessible for all your holistic healthcare needs.</p>
 
             <div className="bg-neutral-light rounded-2xl p-6 mb-8 border border-gray-100 max-w-lg">
               <div className="flex items-start gap-4">

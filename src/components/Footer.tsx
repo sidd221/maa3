@@ -8,7 +8,7 @@ export default function Footer() {
   const isInView = useInView(footerRef);
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behaviour: 'smooth' });
   };
 
   return (

@@ -125,7 +125,7 @@ export default function Home() {
             transition={{ delay: 0.8, duration: 0.8 }}
             className="text-lg sm:text-xl text-text-dark/70 mb-8 sm:mb-10 max-w-lg leading-relaxed"
           >
-            The leading Homoeopathic Clinic in Patna, specializing in chronic conditions, pediatric care & holistic wellness through personalized solutions.
+            The leading Homoeopathic Clinic in Patna, specialising in chronic conditions, paediatric care & holistic wellness through personalised solutions.
           </motion.p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-8 sm:mb-10">
@@ -205,7 +205,7 @@ export default function Home() {
                <User size={20} />
             </div>
             <div className="text-left">
-              <div className="text-sm font-bold text-primary">Personalized Care</div>
+              <div className="text-sm font-bold text-primary">Personalised Care</div>
               <div className="text-[10px] text-text-dark/60">Tailored Case Studies</div>
             </div>
           </div>
@@ -216,14 +216,14 @@ export default function Home() {
       <section className="py-24 px-4 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-serif font-bold text-primary mb-4">Why Homoeopathy?</h2>
-          <p className="text-lg text-text-dark/70 max-w-2xl mx-auto">A natural approach to healing that stimulates your body's own defense mechanisms.</p>
+          <p className="text-lg text-text-dark/70 max-w-2xl mx-auto">A natural approach to healing that stimulates your body's own defence mechanisms.</p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
           {[
             { title: "No Side Effects", desc: "Completely safe, natural remedies suitable for all ages including infants and pregnant women.", icon: ShieldCheck },
             { title: "Root-Cause Treatment", desc: "We don't just suppress symptoms, we identify and treat the underlying cause of your illness.", icon: HeartPulse },
-            { title: "Personalized Care", desc: "Every prescription is customized based on your unique physical, mental, and emotional profile.", icon: User }
+            { title: "Personalised Care", desc: "Every prescription is customised based on your unique physical, mental, and emotional profile.", icon: User }
           ].map((feature, i) => (
             <motion.div 
               key={i}
@@ -395,7 +395,7 @@ export default function Home() {
       {/* CTA Banner */}
       <section className="bg-transparent py-20 px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">Ready to start your healing journey?</h2>
-        <p className="text-lg text-text-dark/70 mb-8 max-w-2xl mx-auto">Get personalized Homoeopathy Treatment in Patna from the city's most trusted clinic. Safe, effective, and tailored just for you.</p>
+        <p className="text-lg text-text-dark/70 mb-8 max-w-2xl mx-auto">Get personalised Homoeopathy Treatment in Patna from the city's most trusted clinic. Safe, effective, and tailored just for you.</p>
         <a href="#contact">
           <motion.button 
             whileHover={{ scale: 1.05 }}

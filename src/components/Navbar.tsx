@@ -63,7 +63,7 @@ export default function Navbar() {
         const offset = element.getBoundingClientRect().top + window.scrollY - 80;
         window.scrollTo({
           top: Math.max(0, offset),
-          behavior: 'smooth'
+          behaviour: 'smooth'
         });
       }
     }, 10);

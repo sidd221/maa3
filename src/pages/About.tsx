@@ -131,8 +131,8 @@ export default function About() {
           <div className="grid md:grid-cols-4 gap-8">
             {[
               { icon: Heart, title: "1. Deep Consultation", desc: "A 45-minute profound discussion about your symptoms, lifestyle, emotional state, and medical history." },
-              { icon: Search, title: "2. Root Diagnosis", desc: "Analyzing the collected information to identify the underlying cause of your condition, not just the superficial symptoms." },
-              { icon: Pill, title: "3. Personalized Remedy", desc: "Selecting a specific homoeopathic medicine tailored exactly to your unique constitution." },
+              { icon: Search, title: "2. Root Diagnosis", desc: "Analysing the collected information to identify the underlying cause of your condition, not just the superficial symptoms." },
+              { icon: Pill, title: "3. Personalised Remedy", desc: "Selecting a specific homoeopathic medicine tailored exactly to your unique constitution." },
               { icon: Activity, title: "4. Gentle Follow-up", desc: "Regular monitoring of your progress and adjusting the remedy potency as your health improves." }
             ].map((step, i) => (
               <motion.div 
