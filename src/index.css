@@ -60,15 +60,10 @@ body {
   animation: gradient-rotate var(--animation-duration, 5s) linear infinite;
 }
 
-@keyframes border-gradient-move {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
+/* Animation removed to fix severe scrolling lag on mobile/desktop */
 .animate-border-gradient {
-  background-size: 300% 300%;
-  animation: border-gradient-move 4s ease infinite;
+  background-size: 100% 100%;
+  will-change: opacity;
 }
 
 @keyframes heartbeat {
