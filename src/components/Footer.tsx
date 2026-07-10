@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-import { Leaf, MapPin, Phone, Mail, ArrowUp } from 'lucide-react';
+import { MapPin, Phone, Mail, ArrowUp } from 'lucide-react';
 import { useRef } from 'react';
 import { motion, AnimatePresence, useInView } from 'motion/react';
 
@@ -8,7 +7,7 @@ export default function Footer() {
   const isInView = useInView(footerRef);
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behaviour: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
