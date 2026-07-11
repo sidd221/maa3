@@ -16,6 +16,44 @@ export default function Contact() {
 
     const formData = new FormData(e.target as HTMLFormElement);
 
+    const name = formData.get('name') as string;
+    const phone = formData.get('phone') as string;
+    const age = formData.get('age') as string;
+    const message = formData.get('message') as string;
+
+    if (name.trim().length < 2) {
+      alert("Please enter a valid name.");
+      setIsSubmitting(false);
+      return;
+    }
+
+    const phoneDigits = phone.replace(/[^0-9]/g, '');
+    if (phoneDigits.length < 10 || phoneDigits.length > 15) {
+      alert("Please enter a valid phone number (10-15 digits).");
+      setIsSubmitting(false);
+      return;
+    }
+
+    const ageNum = parseInt(age, 10);
+    if (isNaN(ageNum) || ageNum <= 0 || ageNum > 120) {
+      alert("Please enter a valid age (1-120).");
+      setIsSubmitting(false);
+      return;
+    }
+
+    if (message.trim().length < 10) {
+      alert("Please enter a more descriptive message (at least 10 characters).");
+      setIsSubmitting(false);
+      return;
+    }
+
+    // Check for spam/gibberish (5 or more repeated characters)
+    if (/(.)\1{4,}/.test(message) || /(.)\1{4,}/.test(name)) {
+      alert("Your input contains too many repeated characters. Please enter valid details.");
+      setIsSubmitting(false);
+      return;
+    }
+
     const accessKey = "c2c0a419-5237-4c53-af20-273144281806";
     formData.append("access_key", accessKey);
 
@@ -144,28 +182,28 @@ export default function Contact() {
                 <label className="block text-sm font-medium text-text-dark/80 mb-2">Name *</label>
                 <div className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent opacity-40 group-focus-within:opacity-80 animate-border-gradient rounded-lg blur transition-opacity duration-500" />
-                  <input required type="text" name="name" className="relative w-full px-4 py-3 rounded-lg border border-transparent focus:border-transparent outline-none transition-all bg-white" />
+                  <input required type="text" name="name" minLength={2} maxLength={50} pattern="^[a-zA-Z\s\-']+$" title="Please enter a valid name (letters only)" onKeyDown={(e) => { if (e.key.length === 1 && !/[a-zA-Z\s\-']/.test(e.key)) e.preventDefault(); }} className="relative w-full px-4 py-3 rounded-lg border border-transparent focus:border-transparent outline-none transition-all bg-white" />
                 </div>
               </div>
               <div>
                 <label className="block text-sm font-medium text-text-dark/80 mb-2">Email *</label>
                 <div className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent opacity-40 group-focus-within:opacity-80 animate-border-gradient rounded-lg blur transition-opacity duration-500" />
-                  <input required type="email" name="email" className="relative w-full px-4 py-3 rounded-lg border border-transparent focus:border-transparent outline-none transition-all bg-white" />
+                  <input required type="email" name="email" maxLength={100} pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address" className="relative w-full px-4 py-3 rounded-lg border border-transparent focus:border-transparent outline-none transition-all bg-white" />
                 </div>
               </div>
               <div>
                 <label className="block text-sm font-medium text-text-dark/80 mb-2">Phone Number *</label>
                 <div className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent opacity-40 group-focus-within:opacity-80 animate-border-gradient rounded-lg blur transition-opacity duration-500" />
-                  <input required type="tel" name="phone" pattern="[0-9+\-\s()]+" title="Please enter a valid phone number" onKeyDown={(e) => { if (!/[0-9+\-\s()]/.test(e.key) && !['Backspace', 'Tab', 'ArrowLeft', 'ArrowRight', 'Delete'].includes(e.key)) e.preventDefault(); }} className="relative w-full px-4 py-3 rounded-lg border border-transparent focus:border-transparent outline-none transition-all bg-white" />
+                  <input required type="tel" name="phone" minLength={10} maxLength={15} pattern="[0-9+\-\s()]+" title="Please enter a valid phone number (10-15 digits)" onKeyDown={(e) => { if (e.key.length === 1 && !/[0-9+\-\s()]/.test(e.key)) e.preventDefault(); }} className="relative w-full px-4 py-3 rounded-lg border border-transparent focus:border-transparent outline-none transition-all bg-white" />
                 </div>
               </div>
               <div>
                 <label className="block text-sm font-medium text-text-dark/80 mb-2">Age *</label>
                 <div className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent opacity-40 group-focus-within:opacity-80 animate-border-gradient rounded-lg blur transition-opacity duration-500" />
-                  <input required type="text" inputMode="numeric" pattern="[0-9]*" name="age" maxLength={3} onKeyDown={(e) => { if (!/[0-9]/.test(e.key) && !['Backspace', 'Tab', 'ArrowLeft', 'ArrowRight', 'Delete'].includes(e.key)) e.preventDefault(); }} className="relative w-full px-4 py-3 rounded-lg border border-transparent focus:border-transparent outline-none transition-all bg-white" />
+                  <input required type="text" inputMode="numeric" pattern="[0-9]*" name="age" maxLength={3} onKeyDown={(e) => { if (e.key.length === 1 && !/[0-9]/.test(e.key)) e.preventDefault(); }} title="Please enter a valid age (e.g. 25)" className="relative w-full px-4 py-3 rounded-lg border border-transparent focus:border-transparent outline-none transition-all bg-white" />
                 </div>
               </div>
             </div>
@@ -173,7 +211,7 @@ export default function Contact() {
               <label className="block text-sm font-medium text-text-dark/80 mb-2">Message *</label>
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent opacity-40 group-focus-within:opacity-80 animate-border-gradient rounded-lg blur transition-opacity duration-500" />
-                <textarea required rows={5} name="message" className="relative w-full px-4 py-3 rounded-lg border border-transparent focus:border-transparent outline-none transition-all resize-none bg-white"></textarea>
+                <textarea required rows={5} name="message" minLength={10} maxLength={1000} title="Please enter a message (at least 10 characters)" className="relative w-full px-4 py-3 rounded-lg border border-transparent focus:border-transparent outline-none transition-all resize-none bg-white"></textarea>
               </div>
             </div>
             <div className="flex justify-center mt-8">
